@@ -33,15 +33,11 @@ namespace ExceptionPrac32
                 Console.WriteLine(ex.GetType());
                 Console.WriteLine(ex.Message);
             }
-
-            if(input<arr.Length)
+            finally
             {
-                Console.WriteLine("입력한 위치의 값은 '" + arr[input] + "'입니다.");
+                Console.WriteLine("finally는 코드가 성공적이든 예외발생이든 무조건 실행!");
             }
-            else
-            {
-                Console.WriteLine("인덱스 범위를 넘었습니다!");
-            }
+     
         }
     }
 }
